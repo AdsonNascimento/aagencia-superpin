@@ -264,4 +264,13 @@ footer {
   .footer-contatos {
     width: 100%;
   }
+
+  main .icon-flut {
+    bottom: 15vh;
+    right: 3rem;
+  }
+  
+  main .icon-flut img {
+    width: 3rem;
+  }
 }
