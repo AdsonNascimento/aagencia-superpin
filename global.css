@@ -91,9 +91,16 @@ header .toggle {
 
 main .icon-flut {
   position: fixed;
-  bottom: 30vh;
-  right: 0rem;
+  bottom: 25vh;
+  right: 2rem;
   z-index: 1;
+  
+  border-radius: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+main .icon-flut img {
+  width: 5rem;
 }
 
 footer {
