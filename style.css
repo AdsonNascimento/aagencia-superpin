@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  color: black;
+}
+
+html header a,
+html body a,
+html footer a {
+  text-decoration: none;
+}
+
+html {
+  /*==== cores bases ====*/
+  --pard: #eaf1df;
+  --blue: #6cafbd;
+  --blue-dark: #2f4f8c;
+  --yellow: #ebb62a;
+  --orange: #e18720;
+
+  /*==== grey ====*/
+  --grey-darck: #4d5e77;
+  --grey-blue: #a1b2cd;
+  --grey-medium: #eaecf2;
+  --grey-light: #e5eaf1;
+  --white-smoke: #ffffff;
+
+  /*==== fonts ====*/
+  font-family: "Montserrat", sans-serif;
+
+  /*==== jump of the cat ====*/
+  font-size: 62.5%; /* tamanho padrão do navegador vira 10px*/
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100vw;
+  height: 6rem;
+  background-color: var(--blue-dark);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 80%;
+  max-width: 1500px;
+}
+
+header .links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+header .links a {
+  color: white;
+}
+
+.button {
+  background-color: var(--blue);
+  padding: 1rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+}
+
+header .toggle {
+  display: none;
+  width: 2.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100vw;
+  margin-top: 6rem;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  border-bottom: 2px var(--blue-dark) solid;
+  padding: 3rem 0rem;
+}
+
+main .icon-flut {
+  position: fixed;
+  top: 50vh;
+  right: 0rem;
+  z-index: 1;
+}
+
+main .icon-flut img {
+  width: 7rem;
+}
+
+main .container-alig {
+  width: 80%;
+  max-width: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+main .text-info {
+  width: 100%;
+  gap: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main .text-info h2 {
+  font-size: 3rem;
+}
+
+main .text-info p {
+  font-size: 1.5rem;
+  width: 75%;
+  text-align: center;
+}
+
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+main .itens {
+  align-items: center;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  width: 25rem;
+  gap: 2rem;
+}
+
+main .itens img {
+  width: 50px;
+}
+
+main .itens-text {
+  text-align: center;
+}
+
+main .itens-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main .itens-text {
+  font-size: 1rem;
+}
+
+main .cotainer-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7rem;
+  max-width: 1000px;
+}
+
+main .itens-galeria {
+  width: 25rem;
+}
+
+main #sobre .container-alig {
+    flex-direction: row;
+}
+
+main .text-sobre {
+  width: 100%;
+  gap: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .text-sobre h2 {
+  font-size: 3rem;
+}
+
+main .text-sobre p {
+  font-size: 1.5rem;
+  width: 75%;
+  text-align: left;
+}
+
+#background {
+  padding: 0;
+}
+
+#background img{
+  width: 100%;
+  max-height: 700px;
+}
+
+#servicos,
+#galeria {
+    background-color: var(--pard);
+}
+
+#potifolio,
+#sobre {
+    background-color: var(--white-smoke);
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+}
+
+.footer-superpin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 1500px;
+  padding: 4rem 0;
+}
+
+.footer-logo {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo img {
+  width: 30rem;
+}
+
+.footer-divider {
+  width: 2px;
+  height: 20rem;
+  background-color: var(--blue-dark);
+}
+
+.footer-contatos {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-contatos h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.footer-contatos ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer-contatos a {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  width: 30rem;
+}
+
+.footer-contatos a p {
+  color: white;
+}
+
+@media ( max-width: 1200px ) {
+  main .cotainer-galeria {
+    width: auto;
+    gap: 3rem;
+  }
+
+  main .itens-galeria {
+    max-width: 17rem;
+  }
+
+  main #sobre .container-alig {
+    flex-direction: column;
+  }
+
+  .footer-superpin {
+    justify-content: space-between;
+  }
+
+  .footer-logo img {
+    width: 20rem;
+  }
+
+  .footer-contatos h2 {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .footer-contatos ul {
+    font-size: 1.25rem;
+  }
+
+  .footer-contatos a img {
+    width: 3rem;
+  }
+}
+
+@media ( max-width: 870px ) {
+
+  header nav.show .links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    gap: 10rem;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--blue-dark);
+    flex-direction: column;
+  }
+
+  header nav .links {
+    display: none;
+  }
+
+  header .links ul {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  header .links ul a {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  header .button {
+    display: none;
+  }
+
+  header nav.show .icon-close {
+    display: block;
+
+    position: fixed;
+    right: 6rem;
+    top: 5rem;
+    z-index: 10;
+  }
+
+  header nav .icon-open {
+    display: block;
+  }
+
+  header .icon-close:hover,
+  header .icon-open:hover {
+    cursor: pointer;
+  }
+
+  main .container-iframe {
+    width: 100%;
+    background-color: red;
+  }
+
+  main .container-iframe iframe {
+    width: 100%;
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 650px) {
+
+  main .itens-galeria {
+    width: 10rem;
+  }
+  .footer-superpin {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-divider {
+    height: 2px;
+    width: 100%;
+  }
+
+  .footer-contatos {
+    width: 100%;
+  }
+}
