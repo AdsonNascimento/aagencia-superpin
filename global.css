@@ -91,7 +91,7 @@ header .toggle {
 
 main .icon-flut {
   position: fixed;
-  top: 80vh;
+  bottom: 30vh;
   right: 0rem;
   z-index: 1;
 }
