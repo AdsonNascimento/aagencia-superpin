@@ -247,6 +247,10 @@ main .text-sobre p {
 @media (max-width: 375px) {
   #capa{
     height: 14rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .cta {
@@ -254,10 +258,8 @@ main .text-sobre p {
     padding: 0.75rem;
   
     border: white 1px solid;
-  
-    bottom: 1rem;
-    right: 20%;
 
+    position: absolute;
     text-align: center;
   }
 }
