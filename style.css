@@ -244,7 +244,7 @@ main .text-sobre p {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
   #capa{
     height: 14rem;
   }
