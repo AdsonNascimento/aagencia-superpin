@@ -256,6 +256,6 @@ main .text-sobre p {
     border: white 1px solid;
   
     top: 10rem;
-    bottom: 1rem;
+    bottom: 0.5rem;
   }
 }
