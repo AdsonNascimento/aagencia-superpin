@@ -264,11 +264,7 @@ main .text-sobre p {
 @media (max-width: 450px) {
   #capa{
     height: 90vw;
-
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
-    justify-content: end;
   }
 
   .cta {
