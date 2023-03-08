@@ -32,5 +32,5 @@ scrollReveal.reveal(
   #sobre .text-sobre, #sobre .container-iframe,
   #contact .text, #contact .links,
   footer .footer-logo, footer .footer-contatos`,
-  { interval: 120 }
+  { interval: 100 }
 )
