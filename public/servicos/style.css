@@ -1,0 +1,153 @@
+main {
+    background-color: var(--pard);
+    margin-top: 6rem;
+} 
+
+section {
+    width: 100vw;
+    padding: 4rem 0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.capa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.capa p {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    width: 70rem;
+    
+}
+
+.capa .button {
+    margin-top: 4rem;
+    font-size: 2rem;
+}
+
+.container {
+    width: 80%;
+    max-width: 1500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    
+}
+
+.container img {
+    max-width: 70rem;
+    max-height: 40rem;
+    border-radius: 25px;
+}
+
+.content,
+.content .text {
+    display: grid;
+    font-size: 1.5rem;
+    gap: 4rem;
+}
+
+.content {
+    width: 80rem;
+}
+
+.container-list {
+    display: flex;
+    gap: 3rem;
+}
+
+.container-list ul {
+    display: grid;
+    gap: 1.5rem;
+
+    /*list-style-image: url("../../assets/list-point.png");*/
+}
+
+.r h2,
+.r p,
+.r .container-list ul {
+    text-align: right;
+}
+
+.r .container-list {
+    justify-content: right;
+}
+
+.divider {
+    width: 75%;
+    max-width: 1400px;
+    height: 2px;
+    background-color: var(--blue);
+    margin: auto;
+}
+
+.container-list li::before {
+    margin-right: 1rem;
+    content: url('../../assets/list-point.png');
+}
+
+.content .button {
+    width: 30rem;
+    text-align: center;
+    margin: auto;
+}
+
+@media ( max-width: 950px ) {
+    .container {
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .container.l {
+        flex-direction: column-reverse;
+    }
+
+    .capa p,
+    .content {
+        width: 100%;
+    }
+
+    .r h2,
+    .r p,
+    .r .container-list ul {
+        text-align: left;
+    }
+
+    .r .container-list {
+        justify-content: left;
+    }
+}
+
+@media ( max-width: 650px ) {
+    .container-list {
+        flex-direction: column;
+    }
+
+    .container img {
+        width: 90%;
+    }
+}
+
+@media ( max-width: 400px ) {
+    .capa .button {
+        font-size: 1.75rem;
+    }
+}
