@@ -15,7 +15,7 @@ main section {
 
   width: 100vw;
   border-bottom: 2px var(--blue-dark) solid;
-  padding: 3rem 0rem;
+  padding: 6rem 0rem;
 }
 
 main .container-alig {
@@ -52,7 +52,7 @@ main .container {
   display: flex;
   justify-content: center;
   align-items: top;
-  gap: 5rem;
+  gap: 7rem;
   flex-wrap: wrap;
 }
 
@@ -64,6 +64,48 @@ main .itens {
   display: flex;
   width: 22rem;
   gap: 2rem;
+}
+
+.itens a img:hover{
+  transform: scale(1.2);
+  filter: drop-shadow(5px 5px 10px rgba(108, 175, 189, 0.25));
+}
+
+.cta:hover {
+  transform: scale(1.1);
+}
+
+main .button:hover {
+  box-shadow: 1px 1px 10px var(--blue);
+}
+
+.container-saiba-mais {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25rem;
+}
+
+.container-saiba-mais a {
+  position: relative;
+}
+
+.container-saiba-mais>a:hover::after {
+  content: " ";
+  width: 9rem;
+  height: 2px;
+  background-color: var(--blue-dark);
+  position: absolute;
+  bottom: -0.5rem;
+  left: 30%;
+  margin: auto;
+}
+
+.saiba-mais {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--blue-dark);
+  font-weight: bold;
 }
 
 main .itens img {
@@ -169,7 +211,6 @@ main .text-sobre p {
 
   border: white 2px solid;
 }
-
 
 #servicos,
 #galeria {

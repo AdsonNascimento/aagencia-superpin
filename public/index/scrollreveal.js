@@ -12,6 +12,6 @@ const scrollReveal = ScrollReveal({
     #galeria .text-info, #galeria .itens-galeria,
     #sobre .text-sobre, #sobre .container-iframe,
     #contact .text, #contact .links,
-    footer .footer-logo, footer .footer-contatos`,
+    footer .footer-logo img, footer .footer-contatos`,
     { interval: 100 }
   )

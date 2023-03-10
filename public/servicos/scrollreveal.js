@@ -8,7 +8,7 @@ const scrollReveal = ScrollReveal({
   
   scrollReveal.reveal(
     `.capa img, .capa .p, .capa .button,
-    .container .text, .container .container-list, .container .button
-    footer .footer-logo, footer .footer-contatos`,
+    .container .text, .container .container-list, .container .button,
+    footer .footer-logo img, footer .footer-contatos`,
     { interval: 100 }
   )
