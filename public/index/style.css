@@ -212,6 +212,12 @@ main .text-sobre p {
   border: white 2px solid;
 }
 
+#sobre .button {
+  margin-top: 2rem;
+  text-align: center;
+  max-width: 25rem;
+}
+
 #servicos,
 #galeria {
   background-color: var(--pard);
