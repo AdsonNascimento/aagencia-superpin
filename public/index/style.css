@@ -75,15 +75,11 @@ main .itens {
   transform: scale(1.1);
 }
 
-main .button:hover {
-  box-shadow: 1px 1px 10px var(--blue);
-}
-
 .container-saiba-mais {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 25rem;
+  height: 22rem;
 }
 
 .container-saiba-mais a {
