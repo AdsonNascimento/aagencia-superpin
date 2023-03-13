@@ -46,7 +46,7 @@ h2 {
     max-width: 1500px;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 3rem;
     
@@ -77,18 +77,6 @@ h2 {
 .container-list ul {
     display: grid;
     gap: 1.5rem;
-
-    /*list-style-image: url("../../assets/list-point.png");*/
-}
-
-.r h2,
-.r p,
-.r .container-list ul {
-    text-align: right;
-}
-
-.r .container-list {
-    justify-content: right;
 }
 
 .divider {
@@ -123,12 +111,6 @@ h2 {
     .capa p,
     .content {
         width: 100%;
-    }
-
-    .r h2,
-    .r p,
-    .r .container-list ul {
-        text-align: left;
     }
 
     .r .container-list {
