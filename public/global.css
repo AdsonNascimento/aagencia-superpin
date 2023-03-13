@@ -179,6 +179,10 @@ footer {
   color: white;
 }
 
+.footer-contatos img {
+  width: 3.7rem;
+}
+
 @media ( max-width: 1200px ) {
   .footer-superpin {
     justify-content: space-between;
