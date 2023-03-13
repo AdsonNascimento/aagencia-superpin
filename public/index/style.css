@@ -136,6 +136,7 @@ main .cotainer-galeria {
 
 main .itens-galeria {
   width: 25rem;
+  aspect-ratio: 1 / 1;
 }
 
 main #sobre .container-alig {
