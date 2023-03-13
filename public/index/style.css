@@ -224,6 +224,13 @@ main .text-sobre p {
   background-color: var(--white-smoke);
 }
 
+#portifolio .button {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  width: 40rem;
+}
+
 @media ( max-width: 1200px ) {
   main .cotainer-galeria {
     width: auto;
@@ -301,6 +308,11 @@ main .text-sobre p {
 
   .cta-text p {
     font-size: 1.15rem;
+  }
+
+  #portifolio .button {
+    font-size: 1.5rem;
+    width: 100%;
   }
 }
 

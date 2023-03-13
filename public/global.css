@@ -62,6 +62,10 @@ header nav {
   max-width: 1500px;
 }
 
+header nav .logo img {
+  width: 12.3rem;
+}
+
 header .links ul {
   display: flex;
   align-items: center;
