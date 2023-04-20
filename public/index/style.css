@@ -1,338 +1,788 @@
 main {
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   justify-content: center;
 
+
+
   width: 100vw;
+
   margin-top: 6rem;
+
 }
+
+
 
 main section {
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 
+
+
   width: 100vw;
+
   border-bottom: 2px var(--blue-dark) solid;
+
   padding: 6rem 0rem;
+
 }
+
+
 
 main .container-alig {
+
   width: 80%;
+
   max-width: 1500px;
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   flex-direction: column;
+
   gap: 4rem;
+
 }
+
+
 
 main .text-info {
+
   width: 100%;
+
   gap: 1.5rem;
 
+
+
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   justify-content: center;
+
 }
+
+
 
 main .text-info h2 {
+
   font-size: 3rem;
+
 }
+
+
 
 main .text-info p {
+
   font-size: 1.5rem;
+
   width: 75%;
+
   text-align: center;
+
 }
+
+
 
 main .container {
+
   display: flex;
+
   justify-content: center;
+
   align-items: top;
+
   gap: 7rem;
+
   flex-wrap: wrap;
+
 }
+
+
 
 main .itens {
+
   align-items: center;
+
   justify-content: top;
+
   align-items: center;
+
   flex-direction: column;
+
   display: flex;
+
   width: 22rem;
+
   gap: 2rem;
+
 }
 
-.itens a img:hover{
+
+
+.itens a img:hover {
+
   transform: scale(1.2);
+
   filter: drop-shadow(5px 5px 10px rgba(108, 175, 189, 0.25));
+
 }
+
+
 
 .cta:hover {
+
   transform: scale(1.1);
+
 }
+
+
 
 .container-saiba-mais {
+
   display: flex;
+
   flex-direction: column;
+
   justify-content: space-between;
+
   height: 22rem;
+
 }
+
+
 
 .container-saiba-mais a {
+
   position: relative;
+
 }
+
+
 
 .container-saiba-mais>a:hover::after {
+
   content: " ";
+
   width: 9rem;
+
   height: 2px;
+
   background-color: var(--blue-dark);
+
   position: absolute;
+
   bottom: -0.5rem;
+
   left: 30%;
+
   margin: auto;
+
 }
+
+
 
 .saiba-mais {
+
   text-align: center;
+
   font-size: 1.5rem;
+
   color: var(--blue-dark);
+
   font-weight: bold;
+
 }
+
+
 
 main .itens img {
+
   width: 50px;
+
 }
 
+
+
 main .itens-text {
+
   text-align: center;
+
 }
+
+
 
 main .itens-text h3 {
+
   font-size: 1.5rem;
+
   margin-bottom: 1rem;
+
 }
+
+
 
 main .itens-text {
+
   font-size: 1.5rem;
+
 }
+
+
 
 main .itens-text p {
+
   color: var(--grey-darck);
+
 }
+
+
 
 main .cotainer-galeria {
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
+
   flex-wrap: wrap;
+
   gap: 10rem;
+
   width: 100%;
+
+  max-width: 1100px;
+
 }
+
+
 
 main .itens-galeria {
+
   width: 25rem;
+
   aspect-ratio: 1 / 1;
+
 }
+
+
 
 main #sobre .container-alig {
+
   flex-direction: row;
+
   padding: 0 20rem;
+
 }
+
+
 
 main .text-sobre {
+
   width: 100%;
+
   gap: 1.5rem;
 
+
+
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
 }
+
+
 
 main .text-sobre h2 {
+
   font-size: 3rem;
+
 }
+
+
 
 main .text-sobre p {
+
   font-size: 1.5rem;
+
   width: 75%;
+
   text-align: left;
+
 }
+
+
 
 .container-iframe video {
+
   max-height: 50rem;
+
 }
 
-#capa{
-  background-image: url(../../assets/capa.png);
-  background-repeat: no-repeat;
+
+
+#capa {
+
+  /* background-image: url(../../assets/capa.webp); */
+
+  /* background-repeat: no-repeat;
+
   background-position: center;
-  background-size: cover;
-  height: 50rem;
+
+  background-size: cover; */
+
+  height: 65rem;
+
   width: 100vw;
 
+
+
   display: flex;
+
   flex-direction: column;
+
   gap: 2rem;
+
   justify-content: center;
+
   align-items: left;
+
+}
+
+#banner-w {
+  width: 100vw;
+  object-fit: cover;
 }
 
 .cta-text {
-  background-color: var(--pard);
-  padding: 0 1rem;
+
+  position: absolute;
+  top: 0rem;
+
+  /* background: radial-gradient(var(--blue-dark) 10%, transparent 50% 80%); */
+
+
+
+  height: 100%;
+
+  width: 80%;
+
+
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 2rem;
+
 }
 
-.cta-text p {
-  color: var(--blue-dark);
-  font-size: 2.5rem;
+
+
+.capa-logo {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
 }
 
-.cta-text span {
+
+
+.capa-logo p {
+
+  font-size: 4.5rem;
+
+  color: var(--pard);
+
+  font-weight: 800;
+
+  Line-height: 3.75rem;
+
+}
+
+
+
+.capa-logo img {
+
+  width: 70rem;
+
+  margin-top: -7rem;
+
+}
+
+
+
+.cta-text>p {
+
+  color: var(--pard);
+
+  font-size: 3rem;
+
+  font-weight: 500;
+
+}
+
+
+
+.cta-text strong {
+
   font-weight: bold;
-  color: var(--blue-dark);
+
+  color: var(--pard);
+
 }
+
+
 
 .cta {
+
   background-color: var(--blue-dark);
+
   padding: 1.5rem 4rem;
-  border-radius: 15px;
+
+  border-radius: 50px;
+
   font-size: 2.5rem;
+
   cursor: pointer;
+
   color: white;
+
   display: inline-block;
 
+
+
   border: white 2px solid;
+
 }
+
+
 
 #sobre .button {
+
   margin-top: 2rem;
+
   text-align: center;
+
   max-width: 25rem;
+
 }
+
+
 
 #servicos,
+
 #galeria {
+
   background-color: var(--pard);
+
 }
+
+
 
 #portifolio,
+
 #sobre {
+
   background-color: var(--white-smoke);
+
 }
+
+
 
 #portifolio .button {
+
   font-size: 2rem;
+
   font-weight: bold;
+
   text-align: center;
+
   width: 40rem;
+
 }
 
-@media ( max-width: 1200px ) {
+
+
+@media (max-width: 1200px) {
+
   main .cotainer-galeria {
+
     width: auto;
+
     gap: 3rem;
+
   }
+
+
 
   main .itens-galeria {
+
     max-width: 17rem;
+
   }
+
+
 
   main #sobre .container-alig {
+
     flex-direction: column;
+
   }
+
 }
 
-@media ( max-width: 870px ) {
+
+
+@media (max-width: 870px) {
+
   main .container-iframe {
+
     width: 100%;
+
   }
+
+
 
   main .container-iframe iframe {
+
     width: 100%;
+
     min-height: 150px;
+
   }
 
-  #capa{
+
+
+  #capa {
+
     height: 38rem;
+
   }
 
-  .cta {
-    padding: 1.5rem 2rem;
-    font-size: 1.5rem;
-  
-    top: 20rem;
-    left: 22rem;
-  }
 
-  main #sobre .container-alig {
-    padding: 0;
-  }
-
-  .container-iframe video {
-    align-self: center;
-  }
 
   .cta-text p {
+
     font-size: 2rem;
+
   }
+
+
+
+  .cta-text {
+
+    gap: 1rem;
+
+  }
+
+
+
+  .capa-logo p {
+
+    font-size: 2.5rem;
+
+  }
+
+
+
+  .capa-logo img {
+
+    width: 30rem;
+
+    margin-top: -3rem;
+
+  }
+
+
+
+  .cta {
+
+    padding: 1.5rem 2rem;
+
+    font-size: 1.5rem;
+
+
+
+    top: 20rem;
+
+    left: 22rem;
+
+  }
+
+
+
+  main #sobre .container-alig {
+
+    padding: 0;
+
+  }
+
+
+
+  .container-iframe video {
+
+    align-self: center;
+
+  }
+
 }
+
+
 
 @media (max-width: 650px) {
+
   main .itens-galeria {
+
     width: 10rem;
+
   }
+
+
 
   #sobre {
+
     width: auto;
+
   }
+
+
 
   main .container-iframe iframe {
+
     height: 100px;
+
   }
 
-  #capa{
+
+
+  #capa {
+
     height: 25rem;
+
   }
+
+
+
+  .capa-logo img {
+
+    width: 30rem;
+
+    margin-top: -3rem;
+
+  }
+
+
 
   .cta {
+
     font-size: 1rem;
+
     font-weight: bold;
-  
+
+
+
     top: 15rem;
+
     left: 17rem;
+
   }
+
+
 
   .cta-text p {
+
     font-size: 1.15rem;
+
   }
+
+
 
   #portifolio .button {
+
     font-size: 1.5rem;
+
     width: 100%;
+
   }
+
 }
 
+
+
 @media (max-width: 450px) {
-  #capa{
+
+  #capa {
+
     height: 90vw;
+
     gap: 1rem;
+
   }
+
+
+
+  .cta-text {
+
+    background: radial-gradient(var(--blue-dark) 20%, transparent 70% 90%);
+
+
+
+    height: 100%;
+
+    width: 100%;
+
+  }
+
+
 
   .cta {
+
     font-size: 1rem;
+
     padding: 0.75rem;
-  
+
+
+
     top: 10rem;
+
     left: 10rem;
+
   }
 
+
+
   .container-iframe video {
+
     max-width: 100%;
+
     align-self: center;
+
   }
+
 }
