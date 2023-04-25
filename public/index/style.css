@@ -19,7 +19,7 @@ main section {
 }
 
 main .container-alig {
-  width: 80%;
+  width: 90%;
   max-width: 1500px;
   display: flex;
   align-items: center;
@@ -71,10 +71,6 @@ main .itens {
   filter: drop-shadow(5px 5px 10px rgba(108, 175, 189, 0.25));
 }
 
-.cta:hover {
-  transform: scale(1.1);
-}
-
 .container-saiba-mais {
   display: flex;
   flex-direction: column;
@@ -82,19 +78,24 @@ main .itens {
   height: 22rem;
 }
 
-.container-saiba-mais a {
+.saiba-mais a {
   position: relative;
 }
 
-.container-saiba-mais>a:hover::after {
+.saiba-mais a::after {
   content: " ";
-  width: 9rem;
+  width: 0%;
   height: 2px;
   background-color: var(--blue-dark);
   position: absolute;
   bottom: -0.5rem;
   left: 30%;
   margin: auto;
+  transition: 0.5s ease-in-out;
+}
+
+.saiba-mais a:hover::after {
+  width: 100%;
 }
 
 .saiba-mais {
@@ -132,6 +133,7 @@ main .cotainer-galeria {
   flex-wrap: wrap;
   gap: 10rem;
   width: 100%;
+  max-width: 1100px;
 }
 
 main .itens-galeria {
@@ -154,59 +156,104 @@ main .text-sobre {
 }
 
 main .text-sobre h2 {
-  font-size: 3rem;
+  font-size: 4rem;
+  color: #203357;
 }
 
 main .text-sobre p {
-  font-size: 1.5rem;
-  width: 75%;
+  font-size: 2rem;
   text-align: left;
+  color: #495873;
 }
 
 .container-iframe video {
   max-height: 50rem;
+  border-radius: 1rem;
 }
 
 #capa{
-  background-image: url(../../assets/capa.png);
+  background-image: url(../../assets/capa.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 50rem;
+  height: 70rem;
   width: 100vw;
+  padding: 0;
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
-  align-items: left;
+  align-items: left; */
+}
+
+.capa-cover {
+  background-color: rgba(0, 0, 0, 0.40);
+  width: 100vw;
+  height: 100%;
+
+  padding-left: 25rem;
+
+  display: flex;
+  align-items: center;
 }
 
 .cta-text {
-  background-color: var(--pard);
-  padding: 0 1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4rem;
+
+  width: 50rem;
 }
 
-.cta-text p {
-  color: var(--blue-dark);
-  font-size: 2.5rem;
+.capa-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.cta-text span {
+.capa-logo p {
+  font-size: 4.5rem;
+  color: var(--pard);
+  font-weight: 800;
+}
+
+.capa-logo img {
+  width: 70rem;
+  margin-top: -7rem;
+}
+
+.cta-text > h4 {
+  color: white;
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 6rem;
+}
+
+.cta-text > p {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cta-text strong {
   font-weight: bold;
-  color: var(--blue-dark);
+  color: var(--pard);
 }
 
 .cta {
-  background-color: var(--blue-dark);
+  background-color: var(--orange);
   padding: 1.5rem 4rem;
-  border-radius: 15px;
-  font-size: 2.5rem;
+  border-radius: 50px;
+  font-size: 2rem;
+  font-weight: 500;
   cursor: pointer;
   color: white;
   display: inline-block;
 
-  border: white 2px solid;
+  /* border: white 2px solid; */
 }
 
 #sobre .button {
@@ -227,7 +274,7 @@ main .text-sobre p {
 
 #portifolio .button {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   width: 40rem;
 }
@@ -261,6 +308,23 @@ main .text-sobre p {
     height: 38rem;
   }
 
+  .cta-text p {
+    font-size: 2rem;
+  }
+
+  .cta-text {
+    gap: 1rem;
+  }
+
+  .capa-logo p {
+    font-size: 2.5rem;
+  }
+  
+  .capa-logo img {
+    width: 30rem;
+    margin-top: -3rem;
+  }
+
   .cta {
     padding: 1.5rem 2rem;
     font-size: 1.5rem;
@@ -275,10 +339,6 @@ main .text-sobre p {
 
   .container-iframe video {
     align-self: center;
-  }
-
-  .cta-text p {
-    font-size: 2rem;
   }
 }
 
@@ -297,6 +357,11 @@ main .text-sobre p {
 
   #capa{
     height: 25rem;
+  }
+  
+  .capa-logo img {
+    width: 30rem;
+    margin-top: -3rem;
   }
 
   .cta {
@@ -321,6 +386,13 @@ main .text-sobre p {
   #capa{
     height: 90vw;
     gap: 1rem;
+  }
+
+  .cta-text {
+    background: radial-gradient(var(--blue-dark) 20%, transparent 70% 90%);
+
+    height: 100%;
+    width: 100%;
   }
 
   .cta {

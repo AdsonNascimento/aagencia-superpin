@@ -79,17 +79,24 @@ header .links a {
 }
 
 .button {
-  background-color: var(--blue);
+  background-color: var(--orange);
   padding: 1rem;
   border-radius: 15px;
   font-size: 1.5rem;
+  font-weight: 500;
   cursor: pointer;
   color: white;
   display: inline-block;
 }
 
-main .button:hover {
-  box-shadow: 1px 1px 10px var(--blue);
+.button:hover,
+.cta:hover {
+  transform: scale(1.02);
+  filter: drop-shadow(4px 4px 10px  rgba(0, 0, 0, 0.25));
+}
+
+header .button {
+  background-color: var(--blue);
 }
 
 header .toggle {
